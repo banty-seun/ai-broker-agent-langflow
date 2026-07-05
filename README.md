@@ -29,6 +29,14 @@ The output is a ranked, **reason-coded**, compliance-gated offer list a complian
 
 ## 🏗️ How it works
 
+### The flow in Langflow
+
+![Broker Agent flow in Langflow](docs/flow-canvas.png)
+
+*The full pipeline on the Langflow canvas — file loaders and RAG on the left, the two LLM agents (recommendation brain + onboarding/rule-drafting) in the centre, and the Gate Engine consuming both on the right.*
+
+### Logical architecture
+
 ```mermaid
 flowchart TD
     subgraph Ingest["1 · Ingestion & RAG"]

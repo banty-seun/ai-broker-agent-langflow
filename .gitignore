@@ -13,3 +13,6 @@ Stanbic/
 # Environment
 .env
 .env.*
+
+# Loose screenshot source files at repo root
+image-*.webp
