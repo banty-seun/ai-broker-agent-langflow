@@ -1,0 +1,154 @@
+{
+  "group": {
+    "group_id": "grp_custodian_ng",
+    "name": "Custodian Investment Plc",
+    "country": "Nigeria",
+    "description": "Custodian Investment Plc is a Nigerian financial holding group with insurance-led businesses across general insurance, life assurance, pensions, trusteeship, property, and related financial services. This prototype catalogue focuses on its customer-facing insurance, pension, and trustee subsidiaries."
+  },
+  "subsidiaries": [
+    {
+      "subsidiary_id": "sub_general_insurance",
+      "name": "Custodian and Allied Insurance Limited",
+      "sector": "General / non-life insurance",
+      "description": "The group's general insurance subsidiary, offering retail and commercial covers such as motor, home, property, marine, travel, engineering, and liability insurance.",
+      "surfaces": [
+        {
+          "surface_id": "surf_general_web",
+          "subsidiary_id": "sub_general_insurance",
+          "type": "web",
+          "name": "Custodian and Allied Insurance Website",
+          "url_or_location": "https://custodianinsurance.com/"
+        },
+        {
+          "surface_id": "surf_general_app",
+          "subsidiary_id": "sub_general_insurance",
+          "type": "app",
+          "name": "Custodian Investment App - Insurance Services",
+          "url_or_location": "Custodian Investment mobile app"
+        },
+        {
+          "surface_id": "surf_general_branch_yaba",
+          "subsidiary_id": "sub_general_insurance",
+          "type": "branch",
+          "name": "Custodian Group Head Office",
+          "url_or_location": "16A Commercial Avenue, Sabo, Yaba, Lagos"
+        },
+        {
+          "surface_id": "surf_general_call_centre",
+          "subsidiary_id": "sub_general_insurance",
+          "type": "call_centre",
+          "name": "General Insurance Customer Care",
+          "url_or_location": "+234 201 277 4008-9"
+        }
+      ]
+    },
+    {
+      "subsidiary_id": "sub_life",
+      "name": "Custodian Life Assurance Limited",
+      "sector": "Life assurance",
+      "description": "The group's specialist life assurance subsidiary, licensed to transact life insurance business and offering protection, savings-linked, annuity, and group life products.",
+      "surfaces": [
+        {
+          "surface_id": "surf_life_web",
+          "subsidiary_id": "sub_life",
+          "type": "web",
+          "name": "Custodian Life Assurance Website",
+          "url_or_location": "https://custodianlifeassurance.com/"
+        },
+        {
+          "surface_id": "surf_life_signup",
+          "subsidiary_id": "sub_life",
+          "type": "signup_redirect",
+          "name": "Custodian Life Product Enquiry Form",
+          "url_or_location": "https://custodianlifeassurance.com/"
+        },
+        {
+          "surface_id": "surf_life_branch_yaba",
+          "subsidiary_id": "sub_life",
+          "type": "branch",
+          "name": "Custodian Group Head Office",
+          "url_or_location": "16A Commercial Avenue, Sabo, Yaba, Lagos"
+        },
+        {
+          "surface_id": "surf_life_call_centre",
+          "subsidiary_id": "sub_life",
+          "type": "call_centre",
+          "name": "Life Assurance Customer Care",
+          "url_or_location": "+234 201 277 4000-9"
+        }
+      ]
+    },
+    {
+      "subsidiary_id": "sub_pensions",
+      "name": "CrusaderSterling Pensions Limited",
+      "sector": "Pension fund administration",
+      "description": "The group's Pension Fund Administrator, offering Retirement Savings Accounts, pension contribution services, and retirement planning support under Nigeria's contributory pension framework.",
+      "surfaces": [
+        {
+          "surface_id": "surf_pensions_web",
+          "subsidiary_id": "sub_pensions",
+          "type": "web",
+          "name": "CrusaderSterling Pensions Website",
+          "url_or_location": "https://crusaderpensions.com/"
+        },
+        {
+          "surface_id": "surf_pensions_app",
+          "subsidiary_id": "sub_pensions",
+          "type": "app",
+          "name": "Crusader Mobile",
+          "url_or_location": "Crusader Mobile app"
+        },
+        {
+          "surface_id": "surf_pensions_branch_ikoyi",
+          "subsidiary_id": "sub_pensions",
+          "type": "branch",
+          "name": "CrusaderSterling Pensions Head Office",
+          "url_or_location": "14B Keffi Street, Off Awolowo Road, Ikoyi, Lagos"
+        },
+        {
+          "surface_id": "surf_pensions_call_centre",
+          "subsidiary_id": "sub_pensions",
+          "type": "call_centre",
+          "name": "Pensions Customer Support",
+          "url_or_location": "+234 813 985 6160"
+        }
+      ]
+    },
+    {
+      "subsidiary_id": "sub_trustees",
+      "name": "Custodian Trustees Limited",
+      "sector": "Trusteeship and estate services",
+      "description": "The group's trustee services subsidiary, providing estate planning, will administration, corporate trust, public trust, and fiduciary services.",
+      "surfaces": [
+        {
+          "surface_id": "surf_trustees_web",
+          "subsidiary_id": "sub_trustees",
+          "type": "web",
+          "name": "Custodian Trustees Website",
+          "url_or_location": "https://custodiantrustees.com/"
+        },
+        {
+          "surface_id": "surf_trustees_signup",
+          "subsidiary_id": "sub_trustees",
+          "type": "signup_redirect",
+          "name": "Custodian Trustees Contact Form",
+          "url_or_location": "https://custodiantrustees.com/contact-us/"
+        },
+        {
+          "surface_id": "surf_trustees_branch_yaba",
+          "subsidiary_id": "sub_trustees",
+          "type": "branch",
+          "name": "Custodian Trustees Head Office",
+          "url_or_location": "16A Commercial Avenue, Sabo, Yaba, Lagos"
+        },
+        {
+          "surface_id": "surf_trustees_call_centre",
+          "subsidiary_id": "sub_trustees",
+          "type": "call_centre",
+          "name": "Trustees Customer Desk",
+          "url_or_location": "+234 201 277 4000-9"
+        }
+      ]
+    }
+  ]
+}

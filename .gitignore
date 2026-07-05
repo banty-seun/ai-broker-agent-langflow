@@ -1,0 +1,15 @@
+# OS
+.DS_Store
+
+# Local copy of the flow that still contains real API keys/tokens — NEVER commit
+*.LOCAL.json
+
+# Full customer dataset (only the 50-record sample is published)
+customer_records.json
+
+# Duplicate/local data working set
+Stanbic/
+
+# Environment
+.env
+.env.*

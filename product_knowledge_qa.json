@@ -1,0 +1,188 @@
+[
+  {
+    "qa_id": "qa_prod_001_001",
+    "product_id": "prod_001",
+    "question": "Who is Motor Third-Party Insurance most suitable for?",
+    "answer": "It suits customers who need the statutory minimum motor cover for a registered private vehicle and are primarily concerned about legal compliance and third-party liability. It is not suitable for customers who expect cover for theft, fire, or damage to their own vehicle."
+  },
+  {
+    "qa_id": "qa_prod_001_002",
+    "product_id": "prod_001",
+    "question": "When should the recommendation engine suggest this product?",
+    "answer": "Suggest it when a customer owns a car, has no active motor policy recorded, and shows price sensitivity or only asks for mandatory cover. If the customer has a newer or financed vehicle, the engine should also show the comprehensive motor upsell as a comparison."
+  },
+  {
+    "qa_id": "qa_prod_001_003",
+    "product_id": "prod_001",
+    "question": "What must be disclosed before purchase?",
+    "answer": "The customer must be told that third-party cover does not repair or replace their own vehicle. They should also see the policy limit, exclusions, claims process, vehicle class assumptions, and any regulatory premium basis used."
+  },
+  {
+    "qa_id": "qa_prod_002_001",
+    "product_id": "prod_002",
+    "question": "Why is Comprehensive Motor Insurance an upsell from third-party cover?",
+    "answer": "It adds own-damage, theft, fire, and broader accident protection to the mandatory third-party liability base. The higher premium may be justified for customers with higher vehicle values, financed vehicles, or low ability to absorb repair costs."
+  },
+  {
+    "qa_id": "qa_prod_002_002",
+    "product_id": "prod_002",
+    "question": "When should the recommendation engine avoid recommending comprehensive cover?",
+    "answer": "Avoid ranking it first where the customer declares severe affordability constraints or where the vehicle value is very low relative to the annual premium. The system can still present it as an option, but it should explain the cost-benefit trade-off."
+  },
+  {
+    "qa_id": "qa_prod_002_003",
+    "product_id": "prod_002",
+    "question": "What customer information is needed for suitability?",
+    "answer": "The model should request or infer vehicle value, usage type, parking location, prior claims, financing status, and appetite for repair-cost risk. Underwriting may require vehicle inspection, proof of ownership, and accurate vehicle particulars."
+  },
+  {
+    "qa_id": "qa_prod_002_004",
+    "product_id": "prod_002",
+    "question": "Which products pair well with comprehensive motor cover?",
+    "answer": "Home Protect Insurance pairs well for customers building a broader personal asset-protection profile. Term Life Protection may also be relevant where the customer has dependants or an auto loan, but any life recommendation must consider affordability and health underwriting."
+  },
+  {
+    "qa_id": "qa_prod_003_001",
+    "product_id": "prod_003",
+    "question": "Who should be considered for Home Protect Insurance?",
+    "answer": "It suits homeowners, tenants, and landlords who would struggle to replace household contents or repair residential property after fire, burglary, flood, or accidental damage. It is especially relevant for customers with motor or life policies but no recorded property cover."
+  },
+  {
+    "qa_id": "qa_prod_003_002",
+    "product_id": "prod_003",
+    "question": "What suitability checks should be made?",
+    "answer": "The engine should distinguish whether the customer needs building cover, contents cover, or both. It should also check property location, occupancy type, approximate replacement values, security features, and whether flood or special perils are required."
+  },
+  {
+    "qa_id": "qa_prod_003_003",
+    "product_id": "prod_003",
+    "question": "What affordability point matters for home insurance?",
+    "answer": "The premium should be compared with the realistic replacement value of the property or contents, not only with the customer's monthly budget. Underinsurance should be disclosed because setting a low sum insured can reduce claim settlement."
+  },
+  {
+    "qa_id": "qa_prod_004_001",
+    "product_id": "prod_004",
+    "question": "Which customers are a strong fit for Marine Cargo Insurance?",
+    "answer": "It is suitable for importers, exporters, wholesalers, ecommerce sellers, and SMEs that move stock or equipment across borders or within Nigeria. It is less relevant for customers with no goods-in-transit exposure."
+  },
+  {
+    "qa_id": "qa_prod_004_002",
+    "product_id": "prod_004",
+    "question": "When should the engine recommend marine cargo after another product?",
+    "answer": "Recommend it to business customers who already buy motor, property, or SME-related covers and whose profile mentions imports, logistics, inventory, or trade finance. It can be a cross-sell after Home Protect or Comprehensive Motor only when business ownership signals are present."
+  },
+  {
+    "qa_id": "qa_prod_004_003",
+    "product_id": "prod_004",
+    "question": "What disclosures are important for cargo cover?",
+    "answer": "The customer should be told that cover depends on declared cargo value, route, packing, voyage details, and the selected scope such as all-risks or restricted cover. Exclusions, excesses, documentation required for claims, and basis of valuation should be shown clearly."
+  },
+  {
+    "qa_id": "qa_prod_005_001",
+    "product_id": "prod_005",
+    "question": "Who is Term Life Protection suitable for?",
+    "answer": "It suits customers with dependants, school-fee obligations, rent, mortgages, business loans, or family income-replacement needs. It is not a savings product, so it should not be recommended to customers seeking investment returns unless protection needs are also clear."
+  },
+  {
+    "qa_id": "qa_prod_005_002",
+    "product_id": "prod_005",
+    "question": "What must be disclosed for life protection?",
+    "answer": "The customer must understand the sum assured, policy term, premium frequency, exclusions, waiting periods if any, medical or health declaration duties, and what happens if premiums lapse. Beneficiary nomination and insurable interest should also be explained."
+  },
+  {
+    "qa_id": "qa_prod_005_003",
+    "product_id": "prod_005",
+    "question": "How should affordability be assessed?",
+    "answer": "The recommendation should check whether the recurring premium can be maintained without disrupting essential expenses. A lower sum assured that remains affordable may be more suitable than a higher cover level likely to lapse."
+  },
+  {
+    "qa_id": "qa_prod_006_001",
+    "product_id": "prod_006",
+    "question": "Who should receive an Education Endowment recommendation?",
+    "answer": "It suits parents, guardians, and sponsors with children or dependants and a defined future education funding goal. The engine should prioritise customers with steady cash flow and enough time before the expected school-fee date."
+  },
+  {
+    "qa_id": "qa_prod_006_002",
+    "product_id": "prod_006",
+    "question": "When is this product less suitable?",
+    "answer": "It may be less suitable where the customer needs short-term liquidity, cannot commit to regular contributions, or wants guaranteed investment returns without policy charges. The engine should not present projected benefits as guaranteed unless the product terms expressly guarantee them."
+  },
+  {
+    "qa_id": "qa_prod_006_003",
+    "product_id": "prod_006",
+    "question": "What cross-sell is appropriate from Education Endowment?",
+    "answer": "Term Life Protection is a natural companion because it protects family income if the sponsor dies. Any cross-sell should avoid duplicating cover beyond the customer's budget and should disclose that both policies require ongoing premiums."
+  },
+  {
+    "qa_id": "qa_prod_007_001",
+    "product_id": "prod_007",
+    "question": "Who is Capital Builder Plan suitable for?",
+    "answer": "It suits customers who want a disciplined medium-term savings plan with a life assurance wrapper and can tolerate policy charges and surrender rules. It is more appropriate for planned accumulation than emergency savings."
+  },
+  {
+    "qa_id": "qa_prod_007_002",
+    "product_id": "prod_007",
+    "question": "What should the engine disclose about investment-linked life products?",
+    "answer": "The customer should see that returns may depend on declared bonuses, underlying investment performance, policy duration, fees, and surrender conditions. The system should avoid language implying deposit-like certainty unless the product document states a guaranteed benefit."
+  },
+  {
+    "qa_id": "qa_prod_007_003",
+    "product_id": "prod_007",
+    "question": "When should this be recommended instead of Education Endowment?",
+    "answer": "Recommend it when the customer has a general wealth-building objective rather than a specific child's education target. If the profile includes children and a known school-fee timeline, Education Endowment should usually rank higher."
+  },
+  {
+    "qa_id": "qa_prod_008_001",
+    "product_id": "prod_008",
+    "question": "Who is eligible for a Retirement Savings Account?",
+    "answer": "An RSA is suitable for formal-sector employees and other eligible contributors who need a regulated pension account under Nigeria's contributory pension system. Opening and transfers must follow PenCom rules and KYC requirements."
+  },
+  {
+    "qa_id": "qa_prod_008_002",
+    "product_id": "prod_008",
+    "question": "When should an RSA be recommended?",
+    "answer": "Recommend it where the customer is employed, self-employed with pension intent, changing jobs, or has no active pension account recorded. The engine should avoid promising unrestricted access because retirement savings are subject to statutory access rules."
+  },
+  {
+    "qa_id": "qa_prod_008_003",
+    "product_id": "prod_008",
+    "question": "What must be disclosed during pension marketing?",
+    "answer": "The customer must be told that pension funds are regulated, withdrawals are restricted, and investment allocation follows approved pension fund rules. Marketing should not imply guaranteed returns or immediate cash access unless a specific lawful access condition applies."
+  },
+  {
+    "qa_id": "qa_prod_009_001",
+    "product_id": "prod_009",
+    "question": "How do Voluntary Pension Contributions relate to an RSA?",
+    "answer": "Voluntary Pension Contributions are an add-on to an existing Retirement Savings Account. They help customers increase retirement savings beyond mandatory contributions, but they inherit pension access, tax, and documentation rules."
+  },
+  {
+    "qa_id": "qa_prod_009_002",
+    "product_id": "prod_009",
+    "question": "Who should be considered for voluntary contributions?",
+    "answer": "Consider customers with stable surplus income, emergency savings already in place, and a long-term retirement objective. Avoid recommending it as a first choice for customers seeking short-term liquidity or debt repayment support."
+  },
+  {
+    "qa_id": "qa_prod_009_003",
+    "product_id": "prod_009",
+    "question": "What affordability warning should be shown?",
+    "answer": "The customer should understand that voluntary contributions may be harder to access than ordinary savings and may have tax consequences if withdrawn early. The recommended contribution should leave enough income for essential spending, insurance premiums, and emergency needs."
+  },
+  {
+    "qa_id": "qa_prod_010_001",
+    "product_id": "prod_010",
+    "question": "Who is Will and Estate Planning Service suitable for?",
+    "answer": "It suits adults with dependants, property, business interests, insurance benefits, pension entitlements, or specific wishes about asset transfer. It is also useful for customers buying life assurance because beneficiary planning and estate planning often overlap."
+  },
+  {
+    "qa_id": "qa_prod_010_002",
+    "product_id": "prod_010",
+    "question": "When should the engine recommend estate planning?",
+    "answer": "Recommend it when a customer has life insurance, a pension account, dependants, real estate, or high-value assets. It should be framed as a trustee service referral, not as legal advice unless the customer is connected to appropriately qualified professionals."
+  },
+  {
+    "qa_id": "qa_prod_010_003",
+    "product_id": "prod_010",
+    "question": "What disclosure is important for trustee services?",
+    "answer": "The customer should be told the difference between will drafting support, trustee appointment, executor duties, probate assistance, and ongoing trust administration. Fees, conflicts of interest, revocation rights, and need for independent legal or tax advice should be made clear."
+  }
+]

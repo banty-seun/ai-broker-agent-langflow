@@ -1,0 +1,58 @@
+[
+  {
+    "doc_id": "doc_ndpa_cross_group_marketing_001",
+    "source": "Synthetic compliance note based on Nigeria Data Protection Act and NDPR principles",
+    "title": "Consent and Cross-Group Marketing Under Nigerian Data Protection Rules",
+    "passages": [
+      "Customer data collected by one financial-services subsidiary should be used only for the purpose disclosed at collection, unless another lawful basis applies. Cross-group marketing may require clear, specific, informed, and freely given consent where the customer would not reasonably expect their data to be shared for a sister company's product recommendation.",
+      "A broad statement that data may be used for improving services is not the same as express permission to profile a customer for insurance, pension, or trusteeship offers across the group. The recommendation engine should store the consent source, date, channel, wording shown to the customer, and the specific subsidiaries covered.",
+      "Customers should be able to opt out of marketing without losing access to core policy servicing, claims handling, pension administration, or trustee services. If consent is withdrawn, the engine should stop non-essential marketing use while preserving records needed for legal, regulatory, fraud-prevention, or contract-performance purposes.",
+      "Sensitive personal data, health information, beneficiary details, next-of-kin data, pension records, and claims history require especially careful handling. The model should not use health or claims signals for unrelated cross-selling unless the purpose, lawful basis, and safeguards are explicitly documented."
+    ]
+  },
+  {
+    "doc_id": "doc_naicom_market_conduct_001",
+    "source": "Synthetic NAICOM market-conduct and insurance-distribution guidance for prototype testing",
+    "title": "Insurance Suitability, Disclosure, Affordability, and Licensed Advice",
+    "passages": [
+      "Insurance recommendations must be suitable for the customer's disclosed needs, risk exposure, budget, and ability to keep premiums current. A product should not be ranked as a best recommendation merely because it has a higher premium, higher commission potential, or stronger group cross-sell priority.",
+      "Affordability is a market-conduct issue, not just a sales issue. If a customer is likely to lapse a life policy, underinsure a property risk, or miss renewal because the premium is too high, the system should present lower-cost options or ask for more information before escalating to a licensed adviser.",
+      "Material facts must be disclosed before purchase, including exclusions, waiting periods, policy limits, excesses, premium frequency, cancellation terms, claims documentation, and consequences of non-disclosure by the customer. For savings-linked or investment-linked life assurance, projected values should not be presented as guaranteed unless the policy wording expressly guarantees them.",
+      "Only appropriately licensed insurers, agents, brokers, or authorised insurance personnel may provide regulated insurance advice or arrange insurance business. A referral from Custodian Life Assurance Limited to Custodian and Allied Insurance Limited, or from any sister company to another, does not by itself authorise the referring staff member or digital channel to give advice on that sister company's regulated product.",
+      "The prototype should therefore separate general product education, lead referral, and regulated advice. When a recommendation involves insurance suitability, underwriting, replacement of an existing policy, or comparison of policy terms, the customer journey should route to a properly authorised insurance representative before sale."
+    ]
+  },
+  {
+    "doc_id": "doc_pencom_pension_marketing_001",
+    "source": "Synthetic PenCom pension-marketing and access-rules note for prototype testing",
+    "title": "Pension Product Marketing and Access Constraints",
+    "passages": [
+      "Pension marketing should be factual, balanced, and consistent with the regulated purpose of retirement savings. A Pension Fund Administrator may explain RSA features, contribution channels, fund choices where permitted, and service standards, but should not imply guaranteed investment performance or immediate access to retirement savings.",
+      "Retirement Savings Accounts and Voluntary Pension Contributions are subject to statutory contribution, transfer, withdrawal, and documentation rules. A recommendation engine should avoid phrases such as instant cash, flexible withdrawal at any time, or guaranteed high return where those claims are not supported by PenCom rules.",
+      "For voluntary contributions, suitability depends on surplus income, long-term savings intent, and the customer's need for liquidity. Customers should be warned that early withdrawals may be restricted or may trigger tax treatment, and that pension savings are not a substitute for emergency savings.",
+      "Cross-selling between a PFA and insurance or trustee subsidiaries should remain a referral unless the receiving entity completes its own KYC, disclosures, and suitability process. Pension records should not be reused for unrelated marketing unless the customer's consent and data-protection basis allow it."
+    ]
+  },
+  {
+    "doc_id": "doc_custodian_life_signup_ambiguous_001",
+    "source": "Synthetic ambiguous signup and privacy wording for Custodian Life Assurance prototype",
+    "title": "Ambiguous Custodian Life Signup and Privacy Terms Excerpt",
+    "passages": [
+      "By submitting this form, you agree that Custodian Life Assurance Limited may contact you about products, service updates, policy administration, claims support, and offers that may be relevant to your financial protection needs. We may use information provided by you, information generated from your interaction with our platforms, and information reasonably necessary to serve you better.",
+      "Your details may be shared within the Custodian group for service improvement, customer support, compliance, analytics, and the development of products that may interest you. Group companies may include insurance, pensions, trusteeship, property, and other financial-service affiliates from time to time.",
+      "Where required by law, we will request your consent before using your information for additional purposes. Continued use of our platforms, forms, call-centre channels, or digital services may be treated as acknowledgement of our privacy practices, subject to your rights under applicable data-protection laws.",
+      "You may opt out of promotional messages using the channels provided in each communication. Opting out of promotional messages may not prevent service, compliance, renewal, claims, pension, trustee, or administrative communications from Custodian group companies where such communication is necessary."
+    ]
+  },
+  {
+    "doc_id": "doc_recommender_governance_001",
+    "source": "Synthetic internal AI-governance note for Custodian prototype",
+    "title": "Recommendation Engine Guardrails for Insurance-Led Cross-Sell",
+    "passages": [
+      "The recommendation engine should tag every recommendation as education, referral, or advice-required. Insurance products with underwriting, affordability, exclusions, or replacement considerations should default to advice-required before bindable purchase unless the customer journey is handled by an authorised insurance channel.",
+      "The engine should not suppress a cheaper suitable product in favour of a more profitable or higher-tier product. Where an upsell such as comprehensive motor or savings-linked life assurance is shown, the reason for the upsell and the lower-cost alternative should be visible to the customer.",
+      "Cross-subsidiary recommendations should be explainable and consent-aware. For example, a life customer may be shown estate-planning education, but the system should not transmit detailed beneficiary, medical, or claims data to Custodian Trustees Limited unless the privacy basis and customer permission are clear.",
+      "Every product recommendation should include a next-best-action that respects regulatory boundaries. The action may be buy online, request quote, speak to licensed adviser, refer to PFA representative, or book trustee consultation, depending on the product and the customer's profile."
+    ]
+  }
+]

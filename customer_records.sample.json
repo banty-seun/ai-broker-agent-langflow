@@ -1,0 +1,1993 @@
+[
+  {
+    "customer_id": "cust_000001",
+    "age": 39,
+    "region": "Lagos",
+    "employment_type": "formal_private",
+    "salary_earner": true,
+    "self_employed": false,
+    "income_band_monthly_naira": "500k_1m",
+    "monthly_income_estimate_naira": 850000,
+    "dependants_count": 3,
+    "marital_status": "married",
+    "rough_cash_balance_naira": 3200000,
+    "rough_savings_level": "moderate",
+    "emergency_savings_months": 4.2,
+    "average_monthly_outflow_naira": 760000,
+    "debt_service_monthly_naira": 55000,
+    "risk_tolerance": "medium",
+    "financial_goals": [
+      "children_education",
+      "protect_family"
+    ],
+    "data_sharing_marketing_consent": "explicit",
+    "profile_completeness": "high",
+    "holdings": [
+      {
+        "product_id": "prod_005",
+        "subsidiary_id": "sub_life",
+        "status": "active",
+        "opened_months_ago": 18,
+        "premium_naira": 42000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      }
+    ],
+    "edge_case": "demo_clean_case",
+    "edge_case_note": "holds Term Life only; dependants and stable salary make this a clean trigger for a same-subsidiary Education Endowment recommendation in sub_life."
+  },
+  {
+    "customer_id": "cust_000002",
+    "age": 42,
+    "region": "Abuja FCT",
+    "employment_type": "formal_private",
+    "salary_earner": true,
+    "self_employed": false,
+    "income_band_monthly_naira": "1m_2m",
+    "monthly_income_estimate_naira": 1250000,
+    "dependants_count": 2,
+    "marital_status": "married",
+    "rough_cash_balance_naira": 7600000,
+    "rough_savings_level": "high",
+    "emergency_savings_months": 7.1,
+    "average_monthly_outflow_naira": 930000,
+    "debt_service_monthly_naira": 65000,
+    "risk_tolerance": "medium",
+    "financial_goals": [
+      "children_education",
+      "protect_family",
+      "retirement_security"
+    ],
+    "data_sharing_marketing_consent": "explicit",
+    "profile_completeness": "high",
+    "holdings": [
+      {
+        "product_id": "prod_005",
+        "subsidiary_id": "sub_life",
+        "status": "active",
+        "opened_months_ago": 63,
+        "premium_naira": 97000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      },
+      {
+        "product_id": "prod_006",
+        "subsidiary_id": "sub_life",
+        "status": "active",
+        "opened_months_ago": 82,
+        "premium_naira": null,
+        "monthly_contribution_naira": 70000,
+        "balance_naira": null
+      }
+    ],
+    "edge_case": "already_holds_obvious_next_product",
+    "edge_case_note": "already holds Term Life and Education Endowment, so the obvious same-subsidiary education recommendation should be suppressed."
+  },
+  {
+    "customer_id": "cust_000003",
+    "age": 31,
+    "region": "Oyo",
+    "employment_type": "unemployed",
+    "salary_earner": false,
+    "self_employed": false,
+    "income_band_monthly_naira": "under_100k",
+    "monthly_income_estimate_naira": 65000,
+    "dependants_count": 0,
+    "marital_status": "single",
+    "rough_cash_balance_naira": 35000,
+    "rough_savings_level": "very_low",
+    "emergency_savings_months": 0.5,
+    "average_monthly_outflow_naira": 72000,
+    "debt_service_monthly_naira": 10000,
+    "risk_tolerance": "low",
+    "financial_goals": [
+      "build_emergency_fund"
+    ],
+    "data_sharing_marketing_consent": "unknown",
+    "profile_completeness": "low",
+    "holdings": [
+      {
+        "product_id": "prod_001",
+        "subsidiary_id": "sub_general_insurance",
+        "status": "lapsed",
+        "opened_months_ago": 29,
+        "premium_naira": 15000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      }
+    ],
+    "edge_case": "no_clear_offer",
+    "edge_case_note": "holds a lapsed motor third-party policy but has low income, no dependants, weak savings, and no clear next-product signal."
+  },
+  {
+    "customer_id": "cust_000004",
+    "age": 46,
+    "region": "Lagos",
+    "employment_type": "formal_private",
+    "salary_earner": true,
+    "self_employed": false,
+    "income_band_monthly_naira": "1m_2m",
+    "monthly_income_estimate_naira": 1750000,
+    "dependants_count": 2,
+    "marital_status": "married",
+    "rough_cash_balance_naira": 9200000,
+    "rough_savings_level": "high",
+    "emergency_savings_months": 6.2,
+    "average_monthly_outflow_naira": 1320000,
+    "debt_service_monthly_naira": 90000,
+    "risk_tolerance": "medium",
+    "financial_goals": [
+      "retirement_security",
+      "tax_efficient_saving",
+      "wealth_building"
+    ],
+    "data_sharing_marketing_consent": "explicit",
+    "profile_completeness": "high",
+    "holdings": [
+      {
+        "product_id": "prod_008",
+        "subsidiary_id": "sub_pensions",
+        "status": "active",
+        "opened_months_ago": 11,
+        "premium_naira": null,
+        "monthly_contribution_naira": 185000,
+        "balance_naira": 26570000
+      }
+    ],
+    "edge_case": "clean_add_on_case",
+    "edge_case_note": "holds an active RSA only and has strong salary capacity, making Voluntary Pension Contributions a clean add-on in sub_pensions."
+  },
+  {
+    "customer_id": "cust_000005",
+    "age": 36,
+    "region": "Rivers",
+    "employment_type": "self_employed_business",
+    "salary_earner": false,
+    "self_employed": true,
+    "income_band_monthly_naira": "500k_1m",
+    "monthly_income_estimate_naira": 980000,
+    "dependants_count": 4,
+    "marital_status": "married",
+    "rough_cash_balance_naira": 2100000,
+    "rough_savings_level": "moderate",
+    "emergency_savings_months": 3,
+    "average_monthly_outflow_naira": 720000,
+    "debt_service_monthly_naira": 45000,
+    "risk_tolerance": "medium",
+    "financial_goals": [
+      "protect_family",
+      "business_protection",
+      "children_education"
+    ],
+    "data_sharing_marketing_consent": "implicit",
+    "profile_completeness": "high",
+    "holdings": [
+      {
+        "product_id": "prod_003",
+        "subsidiary_id": "sub_general_insurance",
+        "status": "active",
+        "opened_months_ago": 94,
+        "premium_naira": 89000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      }
+    ],
+    "edge_case": "dependants_term_life_gap",
+    "edge_case_note": "holds Home Protect but not Term Life despite four dependants, creating a clear family-protection gap."
+  },
+  {
+    "customer_id": "cust_000006",
+    "age": 40,
+    "region": "Kano",
+    "employment_type": "informal_trader",
+    "salary_earner": false,
+    "self_employed": true,
+    "income_band_monthly_naira": "100k_250k",
+    "monthly_income_estimate_naira": 240000,
+    "dependants_count": 3,
+    "marital_status": "married",
+    "rough_cash_balance_naira": 65000,
+    "rough_savings_level": "very_low",
+    "emergency_savings_months": 0.4,
+    "average_monthly_outflow_naira": 210000,
+    "debt_service_monthly_naira": 52000,
+    "risk_tolerance": "low",
+    "financial_goals": [
+      "protect_family",
+      "children_education",
+      "build_emergency_fund"
+    ],
+    "data_sharing_marketing_consent": "explicit",
+    "profile_completeness": "medium",
+    "holdings": [
+      {
+        "product_id": "prod_001",
+        "subsidiary_id": "sub_general_insurance",
+        "status": "active",
+        "opened_months_ago": 30,
+        "premium_naira": 15000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      }
+    ],
+    "edge_case": "affordability_holdback",
+    "edge_case_note": "holds Motor Third-Party only; dependants suggest protection needs, but low savings and high debt service should hold back paid recommendations."
+  },
+  {
+    "customer_id": "cust_000007",
+    "age": 49,
+    "region": "Lagos",
+    "employment_type": "self_employed_business",
+    "salary_earner": false,
+    "self_employed": true,
+    "income_band_monthly_naira": "over_2m",
+    "monthly_income_estimate_naira": 2200000,
+    "dependants_count": 3,
+    "marital_status": "married",
+    "rough_cash_balance_naira": 18800000,
+    "rough_savings_level": "high",
+    "emergency_savings_months": 8,
+    "average_monthly_outflow_naira": 1850000,
+    "debt_service_monthly_naira": 120000,
+    "risk_tolerance": "medium",
+    "financial_goals": [
+      "asset_protection",
+      "business_protection",
+      "estate_planning"
+    ],
+    "data_sharing_marketing_consent": "explicit",
+    "profile_completeness": "high",
+    "holdings": [
+      {
+        "product_id": "prod_002",
+        "subsidiary_id": "sub_general_insurance",
+        "status": "active",
+        "opened_months_ago": 95,
+        "premium_naira": 605000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      },
+      {
+        "product_id": "prod_008",
+        "subsidiary_id": "sub_pensions",
+        "status": "active",
+        "opened_months_ago": 67,
+        "premium_naira": null,
+        "monthly_contribution_naira": 185000,
+        "balance_naira": 25870000
+      }
+    ],
+    "edge_case": "cross_subsidiary_holdings",
+    "edge_case_note": "holds Comprehensive Motor in sub_general_insurance and an RSA in sub_pensions, so recommendations must handle existing cross-subsidiary relationships."
+  },
+  {
+    "customer_id": "cust_000008",
+    "age": 34,
+    "region": "Kaduna",
+    "employment_type": "formal_private",
+    "salary_earner": true,
+    "self_employed": false,
+    "income_band_monthly_naira": "500k_1m",
+    "monthly_income_estimate_naira": 520000,
+    "dependants_count": 1,
+    "marital_status": "single",
+    "rough_cash_balance_naira": 280000,
+    "rough_savings_level": "low",
+    "emergency_savings_months": 1.1,
+    "average_monthly_outflow_naira": 250000,
+    "debt_service_monthly_naira": 0,
+    "risk_tolerance": "medium",
+    "financial_goals": [
+      "protect_family"
+    ],
+    "data_sharing_marketing_consent": "unknown",
+    "profile_completeness": "low",
+    "holdings": [
+      {
+        "product_id": "prod_008",
+        "subsidiary_id": "sub_pensions",
+        "status": "active",
+        "opened_months_ago": 97,
+        "premium_naira": null,
+        "monthly_contribution_naira": 45000,
+        "balance_naira": 4960000
+      }
+    ],
+    "edge_case": "sparse_profile",
+    "edge_case_note": "holds an active RSA but the profile is sparse and consent is unknown, so recommendations should be conservative."
+  },
+  {
+    "customer_id": "cust_000009",
+    "age": 23,
+    "region": "Lagos",
+    "employment_type": "formal_private",
+    "salary_earner": true,
+    "self_employed": false,
+    "income_band_monthly_naira": "250k_500k",
+    "monthly_income_estimate_naira": 280000,
+    "dependants_count": 0,
+    "marital_status": "single",
+    "rough_cash_balance_naira": 460000,
+    "rough_savings_level": "moderate",
+    "emergency_savings_months": 2.8,
+    "average_monthly_outflow_naira": 165000,
+    "debt_service_monthly_naira": 0,
+    "risk_tolerance": "high",
+    "financial_goals": [
+      "save_regularly",
+      "vehicle_protection"
+    ],
+    "data_sharing_marketing_consent": "implicit",
+    "profile_completeness": "medium",
+    "holdings": [
+      {
+        "product_id": "prod_001",
+        "subsidiary_id": "sub_general_insurance",
+        "status": "paid_up",
+        "opened_months_ago": 62,
+        "premium_naira": 15000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      }
+    ],
+    "edge_case": "under_25",
+    "edge_case_note": "under-25 customer holds Motor Third-Party only, with no dependants and early-career income, limiting suitability for long-term family protection products."
+  },
+  {
+    "customer_id": "cust_000010",
+    "age": 45,
+    "region": "Abuja FCT",
+    "employment_type": "formal_private",
+    "salary_earner": true,
+    "self_employed": false,
+    "income_band_monthly_naira": "1m_2m",
+    "monthly_income_estimate_naira": 1600000,
+    "dependants_count": 3,
+    "marital_status": "married",
+    "rough_cash_balance_naira": 10200000,
+    "rough_savings_level": "high",
+    "emergency_savings_months": 6.8,
+    "average_monthly_outflow_naira": 1120000,
+    "debt_service_monthly_naira": 50000,
+    "risk_tolerance": "medium",
+    "financial_goals": [
+      "protect_family",
+      "children_education",
+      "retirement_security",
+      "estate_planning"
+    ],
+    "data_sharing_marketing_consent": "explicit",
+    "profile_completeness": "high",
+    "holdings": [
+      {
+        "product_id": "prod_005",
+        "subsidiary_id": "sub_life",
+        "status": "active",
+        "opened_months_ago": 27,
+        "premium_naira": 176000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      },
+      {
+        "product_id": "prod_008",
+        "subsidiary_id": "sub_pensions",
+        "status": "active",
+        "opened_months_ago": 13,
+        "premium_naira": null,
+        "monthly_contribution_naira": 145000,
+        "balance_naira": 9870000
+      }
+    ],
+    "edge_case": "fits_several_products",
+    "edge_case_note": "holds Term Life and an RSA, while dependants, high savings, and estate goals make Education Endowment, voluntary pension contributions, and estate planning all plausible."
+  },
+  {
+    "customer_id": "cust_000011",
+    "age": 58,
+    "region": "Lagos",
+    "employment_type": "formal_private",
+    "salary_earner": true,
+    "self_employed": false,
+    "income_band_monthly_naira": "over_2m",
+    "monthly_income_estimate_naira": 3000000,
+    "dependants_count": 1,
+    "marital_status": "married",
+    "rough_cash_balance_naira": 30000000,
+    "rough_savings_level": "high",
+    "emergency_savings_months": 9.5,
+    "average_monthly_outflow_naira": 2100000,
+    "debt_service_monthly_naira": 0,
+    "risk_tolerance": "low",
+    "financial_goals": [
+      "estate_planning",
+      "retirement_security",
+      "protect_family"
+    ],
+    "data_sharing_marketing_consent": "declined",
+    "profile_completeness": "high",
+    "holdings": [
+      {
+        "product_id": "prod_008",
+        "subsidiary_id": "sub_pensions",
+        "status": "active",
+        "opened_months_ago": 168,
+        "premium_naira": null,
+        "monthly_contribution_naira": 350000,
+        "balance_naira": 27590000
+      },
+      {
+        "product_id": "prod_010",
+        "subsidiary_id": "sub_trustees",
+        "status": "active",
+        "opened_months_ago": 50,
+        "premium_naira": null,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      }
+    ],
+    "edge_case": "strong_on_paper_suitability_concern",
+    "edge_case_note": "strong income and assets fit estate planning on paper, but declined marketing consent and low risk tolerance create a suitability concern."
+  },
+  {
+    "customer_id": "cust_000012",
+    "age": 54,
+    "region": "Plateau",
+    "employment_type": "formal_private",
+    "salary_earner": true,
+    "self_employed": false,
+    "income_band_monthly_naira": "250k_500k",
+    "monthly_income_estimate_naira": 460000,
+    "dependants_count": 1,
+    "marital_status": "married",
+    "rough_cash_balance_naira": 3030000,
+    "rough_savings_level": "high",
+    "emergency_savings_months": 8.2,
+    "average_monthly_outflow_naira": 490000,
+    "debt_service_monthly_naira": 90000,
+    "risk_tolerance": "low",
+    "financial_goals": [
+      "protect_family",
+      "retirement_security"
+    ],
+    "data_sharing_marketing_consent": "implicit",
+    "profile_completeness": "high",
+    "holdings": [
+      {
+        "product_id": "prod_005",
+        "subsidiary_id": "sub_life",
+        "status": "active",
+        "opened_months_ago": 53,
+        "premium_naira": 45000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  },
+  {
+    "customer_id": "cust_000013",
+    "age": 55,
+    "region": "Oyo",
+    "employment_type": "formal_private",
+    "salary_earner": true,
+    "self_employed": false,
+    "income_band_monthly_naira": "250k_500k",
+    "monthly_income_estimate_naira": 320000,
+    "dependants_count": 1,
+    "marital_status": "single",
+    "rough_cash_balance_naira": 400000,
+    "rough_savings_level": "low",
+    "emergency_savings_months": 2.3,
+    "average_monthly_outflow_naira": 180000,
+    "debt_service_monthly_naira": 0,
+    "risk_tolerance": "medium",
+    "financial_goals": [
+      "protect_family",
+      "retirement_security",
+      "tax_efficient_saving"
+    ],
+    "data_sharing_marketing_consent": "explicit",
+    "profile_completeness": "high",
+    "holdings": [
+      {
+        "product_id": "prod_005",
+        "subsidiary_id": "sub_life",
+        "status": "active",
+        "opened_months_ago": 27,
+        "premium_naira": 25000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  },
+  {
+    "customer_id": "cust_000014",
+    "age": 48,
+    "region": "Rivers",
+    "employment_type": "formal_public",
+    "salary_earner": true,
+    "self_employed": false,
+    "income_band_monthly_naira": "250k_500k",
+    "monthly_income_estimate_naira": 440000,
+    "dependants_count": 4,
+    "marital_status": "married",
+    "rough_cash_balance_naira": 110000,
+    "rough_savings_level": "very_low",
+    "emergency_savings_months": 0.3,
+    "average_monthly_outflow_naira": 300000,
+    "debt_service_monthly_naira": 75000,
+    "risk_tolerance": "high",
+    "financial_goals": [
+      "protect_family"
+    ],
+    "data_sharing_marketing_consent": "implicit",
+    "profile_completeness": "medium",
+    "holdings": [
+      {
+        "product_id": "prod_008",
+        "subsidiary_id": "sub_pensions",
+        "status": "active",
+        "opened_months_ago": 129,
+        "premium_naira": null,
+        "monthly_contribution_naira": 60000,
+        "balance_naira": 5800000
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  },
+  {
+    "customer_id": "cust_000015",
+    "age": 21,
+    "region": "Lagos",
+    "employment_type": "self_employed_business",
+    "salary_earner": false,
+    "self_employed": true,
+    "income_band_monthly_naira": "1m_2m",
+    "monthly_income_estimate_naira": 1040000,
+    "dependants_count": 1,
+    "marital_status": "divorced",
+    "rough_cash_balance_naira": 3220000,
+    "rough_savings_level": "moderate",
+    "emergency_savings_months": 4.8,
+    "average_monthly_outflow_naira": 750000,
+    "debt_service_monthly_naira": 0,
+    "risk_tolerance": "medium",
+    "financial_goals": [
+      "protect_family",
+      "business_protection",
+      "wealth_building",
+      "tax_efficient_saving"
+    ],
+    "data_sharing_marketing_consent": "implicit",
+    "profile_completeness": "medium",
+    "holdings": [
+      {
+        "product_id": "prod_004",
+        "subsidiary_id": "sub_general_insurance",
+        "status": "active",
+        "opened_months_ago": 17,
+        "premium_naira": 65000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  },
+  {
+    "customer_id": "cust_000016",
+    "age": 54,
+    "region": "Cross River",
+    "employment_type": "self_employed_business",
+    "salary_earner": false,
+    "self_employed": true,
+    "income_band_monthly_naira": "1m_2m",
+    "monthly_income_estimate_naira": 1820000,
+    "dependants_count": 1,
+    "marital_status": "married",
+    "rough_cash_balance_naira": 860000,
+    "rough_savings_level": "very_low",
+    "emergency_savings_months": 0.7,
+    "average_monthly_outflow_naira": 1330000,
+    "debt_service_monthly_naira": 0,
+    "risk_tolerance": "medium",
+    "financial_goals": [
+      "protect_family",
+      "retirement_security"
+    ],
+    "data_sharing_marketing_consent": "implicit",
+    "profile_completeness": "low",
+    "holdings": [
+      {
+        "product_id": "prod_005",
+        "subsidiary_id": "sub_life",
+        "status": "active",
+        "opened_months_ago": 24,
+        "premium_naira": 134000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  },
+  {
+    "customer_id": "cust_000017",
+    "age": 62,
+    "region": "Kaduna",
+    "employment_type": "self_employed_business",
+    "salary_earner": false,
+    "self_employed": true,
+    "income_band_monthly_naira": "1m_2m",
+    "monthly_income_estimate_naira": 1660000,
+    "dependants_count": 2,
+    "marital_status": "married",
+    "rough_cash_balance_naira": 160000,
+    "rough_savings_level": "very_low",
+    "emergency_savings_months": 0.1,
+    "average_monthly_outflow_naira": 1420000,
+    "debt_service_monthly_naira": 0,
+    "risk_tolerance": "medium",
+    "financial_goals": [
+      "protect_family",
+      "retirement_security",
+      "business_protection"
+    ],
+    "data_sharing_marketing_consent": "unknown",
+    "profile_completeness": "medium",
+    "holdings": [
+      {
+        "product_id": "prod_001",
+        "subsidiary_id": "sub_general_insurance",
+        "status": "active",
+        "opened_months_ago": 163,
+        "premium_naira": 15000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  },
+  {
+    "customer_id": "cust_000018",
+    "age": 45,
+    "region": "Lagos",
+    "employment_type": "formal_private",
+    "salary_earner": true,
+    "self_employed": false,
+    "income_band_monthly_naira": "500k_1m",
+    "monthly_income_estimate_naira": 840000,
+    "dependants_count": 0,
+    "marital_status": "single",
+    "rough_cash_balance_naira": 1060000,
+    "rough_savings_level": "low",
+    "emergency_savings_months": 1.7,
+    "average_monthly_outflow_naira": 800000,
+    "debt_service_monthly_naira": 160000,
+    "risk_tolerance": "low",
+    "financial_goals": [
+      "retirement_security",
+      "wealth_building",
+      "asset_protection"
+    ],
+    "data_sharing_marketing_consent": "unknown",
+    "profile_completeness": "medium",
+    "holdings": [
+      {
+        "product_id": "prod_001",
+        "subsidiary_id": "sub_general_insurance",
+        "status": "active",
+        "opened_months_ago": 36,
+        "premium_naira": 15000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  },
+  {
+    "customer_id": "cust_000019",
+    "age": 49,
+    "region": "Delta",
+    "employment_type": "formal_public",
+    "salary_earner": true,
+    "self_employed": false,
+    "income_band_monthly_naira": "250k_500k",
+    "monthly_income_estimate_naira": 330000,
+    "dependants_count": 0,
+    "marital_status": "single",
+    "rough_cash_balance_naira": 2370000,
+    "rough_savings_level": "high",
+    "emergency_savings_months": 6.5,
+    "average_monthly_outflow_naira": 300000,
+    "debt_service_monthly_naira": 40000,
+    "risk_tolerance": "high",
+    "financial_goals": [
+      "retirement_security",
+      "tax_efficient_saving"
+    ],
+    "data_sharing_marketing_consent": "unknown",
+    "profile_completeness": "medium",
+    "holdings": [
+      {
+        "product_id": "prod_001",
+        "subsidiary_id": "sub_general_insurance",
+        "status": "lapsed",
+        "opened_months_ago": 141,
+        "premium_naira": 15000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  },
+  {
+    "customer_id": "cust_000020",
+    "age": 50,
+    "region": "Imo",
+    "employment_type": "self_employed_business",
+    "salary_earner": false,
+    "self_employed": true,
+    "income_band_monthly_naira": "1m_2m",
+    "monthly_income_estimate_naira": 1370000,
+    "dependants_count": 0,
+    "marital_status": "married",
+    "rough_cash_balance_naira": 8400000,
+    "rough_savings_level": "high",
+    "emergency_savings_months": 6.9,
+    "average_monthly_outflow_naira": 1030000,
+    "debt_service_monthly_naira": 0,
+    "risk_tolerance": "low",
+    "financial_goals": [
+      "retirement_security",
+      "business_protection",
+      "wealth_building"
+    ],
+    "data_sharing_marketing_consent": "explicit",
+    "profile_completeness": "high",
+    "holdings": [
+      {
+        "product_id": "prod_008",
+        "subsidiary_id": "sub_pensions",
+        "status": "active",
+        "opened_months_ago": 56,
+        "premium_naira": null,
+        "monthly_contribution_naira": 220000,
+        "balance_naira": 15360000
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  },
+  {
+    "customer_id": "cust_000021",
+    "age": 40,
+    "region": "Lagos",
+    "employment_type": "formal_private",
+    "salary_earner": true,
+    "self_employed": false,
+    "income_band_monthly_naira": "500k_1m",
+    "monthly_income_estimate_naira": 890000,
+    "dependants_count": 1,
+    "marital_status": "single",
+    "rough_cash_balance_naira": 6710000,
+    "rough_savings_level": "high",
+    "emergency_savings_months": 8.4,
+    "average_monthly_outflow_naira": 770000,
+    "debt_service_monthly_naira": 0,
+    "risk_tolerance": "low",
+    "financial_goals": [
+      "protect_family",
+      "children_education"
+    ],
+    "data_sharing_marketing_consent": "implicit",
+    "profile_completeness": "low",
+    "holdings": [
+      {
+        "product_id": "prod_001",
+        "subsidiary_id": "sub_general_insurance",
+        "status": "lapsed",
+        "opened_months_ago": 56,
+        "premium_naira": 15000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  },
+  {
+    "customer_id": "cust_000022",
+    "age": 47,
+    "region": "Cross River",
+    "employment_type": "formal_private",
+    "salary_earner": true,
+    "self_employed": false,
+    "income_band_monthly_naira": "250k_500k",
+    "monthly_income_estimate_naira": 310000,
+    "dependants_count": 1,
+    "marital_status": "married",
+    "rough_cash_balance_naira": 2210000,
+    "rough_savings_level": "high",
+    "emergency_savings_months": 7.1,
+    "average_monthly_outflow_naira": 270000,
+    "debt_service_monthly_naira": 0,
+    "risk_tolerance": "low",
+    "financial_goals": [
+      "protect_family"
+    ],
+    "data_sharing_marketing_consent": "explicit",
+    "profile_completeness": "high",
+    "holdings": [
+      {
+        "product_id": "prod_003",
+        "subsidiary_id": "sub_general_insurance",
+        "status": "active",
+        "opened_months_ago": 116,
+        "premium_naira": 35000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  },
+  {
+    "customer_id": "cust_000023",
+    "age": 36,
+    "region": "Ogun",
+    "employment_type": "student",
+    "salary_earner": false,
+    "self_employed": false,
+    "income_band_monthly_naira": "100k_250k",
+    "monthly_income_estimate_naira": 140000,
+    "dependants_count": 0,
+    "marital_status": "single",
+    "rough_cash_balance_naira": 70000,
+    "rough_savings_level": "very_low",
+    "emergency_savings_months": 0.7,
+    "average_monthly_outflow_naira": 120000,
+    "debt_service_monthly_naira": 10000,
+    "risk_tolerance": "medium",
+    "financial_goals": [
+      "retirement_security"
+    ],
+    "data_sharing_marketing_consent": "explicit",
+    "profile_completeness": "medium",
+    "holdings": [
+      {
+        "product_id": "prod_003",
+        "subsidiary_id": "sub_general_insurance",
+        "status": "active",
+        "opened_months_ago": 24,
+        "premium_naira": 18000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  },
+  {
+    "customer_id": "cust_000024",
+    "age": 23,
+    "region": "Lagos",
+    "employment_type": "formal_private",
+    "salary_earner": true,
+    "self_employed": false,
+    "income_band_monthly_naira": "250k_500k",
+    "monthly_income_estimate_naira": 310000,
+    "dependants_count": 1,
+    "marital_status": "married",
+    "rough_cash_balance_naira": 1110000,
+    "rough_savings_level": "high",
+    "emergency_savings_months": 6.6,
+    "average_monthly_outflow_naira": 190000,
+    "debt_service_monthly_naira": 0,
+    "risk_tolerance": "low",
+    "financial_goals": [
+      "protect_family"
+    ],
+    "data_sharing_marketing_consent": "unknown",
+    "profile_completeness": "medium",
+    "holdings": [
+      {
+        "product_id": "prod_001",
+        "subsidiary_id": "sub_general_insurance",
+        "status": "active",
+        "opened_months_ago": 1,
+        "premium_naira": 15000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  },
+  {
+    "customer_id": "cust_000025",
+    "age": 50,
+    "region": "Lagos",
+    "employment_type": "informal_trader",
+    "salary_earner": false,
+    "self_employed": true,
+    "income_band_monthly_naira": "250k_500k",
+    "monthly_income_estimate_naira": 400000,
+    "dependants_count": 1,
+    "marital_status": "married",
+    "rough_cash_balance_naira": 1520000,
+    "rough_savings_level": "moderate",
+    "emergency_savings_months": 4.7,
+    "average_monthly_outflow_naira": 280000,
+    "debt_service_monthly_naira": 80000,
+    "risk_tolerance": "low",
+    "financial_goals": [
+      "protect_family"
+    ],
+    "data_sharing_marketing_consent": "explicit",
+    "profile_completeness": "medium",
+    "holdings": [
+      {
+        "product_id": "prod_005",
+        "subsidiary_id": "sub_life",
+        "status": "active",
+        "opened_months_ago": 108,
+        "premium_naira": 31000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      },
+      {
+        "product_id": "prod_003",
+        "subsidiary_id": "sub_general_insurance",
+        "status": "active",
+        "opened_months_ago": 58,
+        "premium_naira": 25000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  },
+  {
+    "customer_id": "cust_000026",
+    "age": 31,
+    "region": "Lagos",
+    "employment_type": "informal_trader",
+    "salary_earner": false,
+    "self_employed": true,
+    "income_band_monthly_naira": "100k_250k",
+    "monthly_income_estimate_naira": 230000,
+    "dependants_count": 1,
+    "marital_status": "single",
+    "rough_cash_balance_naira": 990000,
+    "rough_savings_level": "moderate",
+    "emergency_savings_months": 5.9,
+    "average_monthly_outflow_naira": 180000,
+    "debt_service_monthly_naira": 25000,
+    "risk_tolerance": "medium",
+    "financial_goals": [
+      "protect_family",
+      "children_education",
+      "retirement_security",
+      "business_protection"
+    ],
+    "data_sharing_marketing_consent": "declined",
+    "profile_completeness": "medium",
+    "holdings": [
+      {
+        "product_id": "prod_005",
+        "subsidiary_id": "sub_life",
+        "status": "active",
+        "opened_months_ago": 55,
+        "premium_naira": 25000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      },
+      {
+        "product_id": "prod_001",
+        "subsidiary_id": "sub_general_insurance",
+        "status": "active",
+        "opened_months_ago": 52,
+        "premium_naira": 15000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  },
+  {
+    "customer_id": "cust_000027",
+    "age": 31,
+    "region": "Lagos",
+    "employment_type": "formal_public",
+    "salary_earner": true,
+    "self_employed": false,
+    "income_band_monthly_naira": "100k_250k",
+    "monthly_income_estimate_naira": 140000,
+    "dependants_count": 3,
+    "marital_status": "married",
+    "rough_cash_balance_naira": 50000,
+    "rough_savings_level": "very_low",
+    "emergency_savings_months": 0.7,
+    "average_monthly_outflow_naira": 70000,
+    "debt_service_monthly_naira": 0,
+    "risk_tolerance": "low",
+    "financial_goals": [
+      "protect_family"
+    ],
+    "data_sharing_marketing_consent": "declined",
+    "profile_completeness": "medium",
+    "holdings": [
+      {
+        "product_id": "prod_003",
+        "subsidiary_id": "sub_general_insurance",
+        "status": "active",
+        "opened_months_ago": 69,
+        "premium_naira": 18000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  },
+  {
+    "customer_id": "cust_000028",
+    "age": 66,
+    "region": "Abuja FCT",
+    "employment_type": "formal_private",
+    "salary_earner": true,
+    "self_employed": false,
+    "income_band_monthly_naira": "500k_1m",
+    "monthly_income_estimate_naira": 570000,
+    "dependants_count": 2,
+    "marital_status": "married",
+    "rough_cash_balance_naira": 3040000,
+    "rough_savings_level": "high",
+    "emergency_savings_months": 7.7,
+    "average_monthly_outflow_naira": 420000,
+    "debt_service_monthly_naira": 0,
+    "risk_tolerance": "medium",
+    "financial_goals": [
+      "protect_family",
+      "retirement_security"
+    ],
+    "data_sharing_marketing_consent": "explicit",
+    "profile_completeness": "high",
+    "holdings": [
+      {
+        "product_id": "prod_001",
+        "subsidiary_id": "sub_general_insurance",
+        "status": "active",
+        "opened_months_ago": 179,
+        "premium_naira": 15000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      },
+      {
+        "product_id": "prod_003",
+        "subsidiary_id": "sub_general_insurance",
+        "status": "active",
+        "opened_months_ago": 139,
+        "premium_naira": 60000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  },
+  {
+    "customer_id": "cust_000029",
+    "age": 21,
+    "region": "Kaduna",
+    "employment_type": "unemployed",
+    "salary_earner": false,
+    "self_employed": false,
+    "income_band_monthly_naira": "under_100k",
+    "monthly_income_estimate_naira": 60000,
+    "dependants_count": 1,
+    "marital_status": "married",
+    "rough_cash_balance_naira": 330000,
+    "rough_savings_level": "high",
+    "emergency_savings_months": 8.3,
+    "average_monthly_outflow_naira": 50000,
+    "debt_service_monthly_naira": 0,
+    "risk_tolerance": "low",
+    "financial_goals": [
+      "protect_family"
+    ],
+    "data_sharing_marketing_consent": "implicit",
+    "profile_completeness": "low",
+    "holdings": [
+      {
+        "product_id": "prod_003",
+        "subsidiary_id": "sub_general_insurance",
+        "status": "lapsed",
+        "opened_months_ago": 11,
+        "premium_naira": 18000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  },
+  {
+    "customer_id": "cust_000030",
+    "age": 47,
+    "region": "Lagos",
+    "employment_type": "self_employed_business",
+    "salary_earner": false,
+    "self_employed": true,
+    "income_band_monthly_naira": "100k_250k",
+    "monthly_income_estimate_naira": 200000,
+    "dependants_count": 3,
+    "marital_status": "married",
+    "rough_cash_balance_naira": 900000,
+    "rough_savings_level": "moderate",
+    "emergency_savings_months": 5.3,
+    "average_monthly_outflow_naira": 170000,
+    "debt_service_monthly_naira": 0,
+    "risk_tolerance": "low",
+    "financial_goals": [
+      "protect_family",
+      "children_education",
+      "retirement_security",
+      "business_protection"
+    ],
+    "data_sharing_marketing_consent": "explicit",
+    "profile_completeness": "medium",
+    "holdings": [
+      {
+        "product_id": "prod_008",
+        "subsidiary_id": "sub_pensions",
+        "status": "active",
+        "opened_months_ago": 10,
+        "premium_naira": null,
+        "monthly_contribution_naira": 30000,
+        "balance_naira": 620000
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  },
+  {
+    "customer_id": "cust_000031",
+    "age": 37,
+    "region": "Plateau",
+    "employment_type": "formal_private",
+    "salary_earner": true,
+    "self_employed": false,
+    "income_band_monthly_naira": "500k_1m",
+    "monthly_income_estimate_naira": 550000,
+    "dependants_count": 0,
+    "marital_status": "divorced",
+    "rough_cash_balance_naira": 30000,
+    "rough_savings_level": "very_low",
+    "emergency_savings_months": 0.1,
+    "average_monthly_outflow_naira": 420000,
+    "debt_service_monthly_naira": 0,
+    "risk_tolerance": "medium",
+    "financial_goals": [
+      "retirement_security"
+    ],
+    "data_sharing_marketing_consent": "declined",
+    "profile_completeness": "medium",
+    "holdings": [
+      {
+        "product_id": "prod_008",
+        "subsidiary_id": "sub_pensions",
+        "status": "paid_up",
+        "opened_months_ago": 18,
+        "premium_naira": null,
+        "monthly_contribution_naira": 65000,
+        "balance_naira": 5510000
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  },
+  {
+    "customer_id": "cust_000032",
+    "age": 44,
+    "region": "Ogun",
+    "employment_type": "formal_private",
+    "salary_earner": true,
+    "self_employed": false,
+    "income_band_monthly_naira": "250k_500k",
+    "monthly_income_estimate_naira": 340000,
+    "dependants_count": 2,
+    "marital_status": "married",
+    "rough_cash_balance_naira": 700000,
+    "rough_savings_level": "moderate",
+    "emergency_savings_months": 3.3,
+    "average_monthly_outflow_naira": 200000,
+    "debt_service_monthly_naira": 25000,
+    "risk_tolerance": "high",
+    "financial_goals": [
+      "protect_family",
+      "children_education",
+      "retirement_security"
+    ],
+    "data_sharing_marketing_consent": "unknown",
+    "profile_completeness": "medium",
+    "holdings": [
+      {
+        "product_id": "prod_002",
+        "subsidiary_id": "sub_general_insurance",
+        "status": "lapsed",
+        "opened_months_ago": 116,
+        "premium_naira": 90000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  },
+  {
+    "customer_id": "cust_000033",
+    "age": 23,
+    "region": "Lagos",
+    "employment_type": "formal_private",
+    "salary_earner": true,
+    "self_employed": false,
+    "income_band_monthly_naira": "100k_250k",
+    "monthly_income_estimate_naira": 130000,
+    "dependants_count": 1,
+    "marital_status": "single",
+    "rough_cash_balance_naira": 690000,
+    "rough_savings_level": "high",
+    "emergency_savings_months": 7.1,
+    "average_monthly_outflow_naira": 100000,
+    "debt_service_monthly_naira": 15000,
+    "risk_tolerance": "medium",
+    "financial_goals": [
+      "protect_family"
+    ],
+    "data_sharing_marketing_consent": "explicit",
+    "profile_completeness": "low",
+    "holdings": [
+      {
+        "product_id": "prod_001",
+        "subsidiary_id": "sub_general_insurance",
+        "status": "active",
+        "opened_months_ago": 39,
+        "premium_naira": 15000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  },
+  {
+    "customer_id": "cust_000034",
+    "age": 33,
+    "region": "Osun",
+    "employment_type": "formal_private",
+    "salary_earner": true,
+    "self_employed": false,
+    "income_band_monthly_naira": "500k_1m",
+    "monthly_income_estimate_naira": 670000,
+    "dependants_count": 4,
+    "marital_status": "married",
+    "rough_cash_balance_naira": 3170000,
+    "rough_savings_level": "high",
+    "emergency_savings_months": 7.5,
+    "average_monthly_outflow_naira": 420000,
+    "debt_service_monthly_naira": 0,
+    "risk_tolerance": "medium",
+    "financial_goals": [
+      "protect_family",
+      "children_education"
+    ],
+    "data_sharing_marketing_consent": "explicit",
+    "profile_completeness": "medium",
+    "holdings": [
+      {
+        "product_id": "prod_005",
+        "subsidiary_id": "sub_life",
+        "status": "active",
+        "opened_months_ago": 77,
+        "premium_naira": 70000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      },
+      {
+        "product_id": "prod_001",
+        "subsidiary_id": "sub_general_insurance",
+        "status": "active",
+        "opened_months_ago": 77,
+        "premium_naira": 15000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  },
+  {
+    "customer_id": "cust_000035",
+    "age": 53,
+    "region": "Kano",
+    "employment_type": "informal_trader",
+    "salary_earner": false,
+    "self_employed": true,
+    "income_band_monthly_naira": "100k_250k",
+    "monthly_income_estimate_naira": 210000,
+    "dependants_count": 0,
+    "marital_status": "single",
+    "rough_cash_balance_naira": 550000,
+    "rough_savings_level": "low",
+    "emergency_savings_months": 2.5,
+    "average_monthly_outflow_naira": 190000,
+    "debt_service_monthly_naira": 0,
+    "risk_tolerance": "medium",
+    "financial_goals": [
+      "retirement_security",
+      "business_protection"
+    ],
+    "data_sharing_marketing_consent": "explicit",
+    "profile_completeness": "high",
+    "holdings": [
+      {
+        "product_id": "prod_002",
+        "subsidiary_id": "sub_general_insurance",
+        "status": "active",
+        "opened_months_ago": 46,
+        "premium_naira": 90000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  },
+  {
+    "customer_id": "cust_000036",
+    "age": 33,
+    "region": "Enugu",
+    "employment_type": "formal_public",
+    "salary_earner": true,
+    "self_employed": false,
+    "income_band_monthly_naira": "500k_1m",
+    "monthly_income_estimate_naira": 800000,
+    "dependants_count": 1,
+    "marital_status": "married",
+    "rough_cash_balance_naira": 750000,
+    "rough_savings_level": "low",
+    "emergency_savings_months": 1,
+    "average_monthly_outflow_naira": 700000,
+    "debt_service_monthly_naira": 0,
+    "risk_tolerance": "low",
+    "financial_goals": [
+      "protect_family",
+      "children_education",
+      "retirement_security",
+      "wealth_building"
+    ],
+    "data_sharing_marketing_consent": "implicit",
+    "profile_completeness": "medium",
+    "holdings": [
+      {
+        "product_id": "prod_001",
+        "subsidiary_id": "sub_general_insurance",
+        "status": "active",
+        "opened_months_ago": 25,
+        "premium_naira": 15000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      },
+      {
+        "product_id": "prod_008",
+        "subsidiary_id": "sub_pensions",
+        "status": "active",
+        "opened_months_ago": 37,
+        "premium_naira": null,
+        "monthly_contribution_naira": 120000,
+        "balance_naira": 12410000
+      },
+      {
+        "product_id": "prod_009",
+        "subsidiary_id": "sub_pensions",
+        "status": "active",
+        "opened_months_ago": 8,
+        "premium_naira": null,
+        "monthly_contribution_naira": 25000,
+        "balance_naira": null
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  },
+  {
+    "customer_id": "cust_000037",
+    "age": 57,
+    "region": "Lagos",
+    "employment_type": "self_employed_business",
+    "salary_earner": false,
+    "self_employed": true,
+    "income_band_monthly_naira": "500k_1m",
+    "monthly_income_estimate_naira": 960000,
+    "dependants_count": 2,
+    "marital_status": "single",
+    "rough_cash_balance_naira": 1400000,
+    "rough_savings_level": "low",
+    "emergency_savings_months": 1.7,
+    "average_monthly_outflow_naira": 700000,
+    "debt_service_monthly_naira": 0,
+    "risk_tolerance": "low",
+    "financial_goals": [
+      "protect_family",
+      "retirement_security"
+    ],
+    "data_sharing_marketing_consent": "explicit",
+    "profile_completeness": "high",
+    "holdings": [
+      {
+        "product_id": "prod_004",
+        "subsidiary_id": "sub_general_insurance",
+        "status": "active",
+        "opened_months_ago": 168,
+        "premium_naira": 125000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  },
+  {
+    "customer_id": "cust_000038",
+    "age": 42,
+    "region": "Kaduna",
+    "employment_type": "formal_public",
+    "salary_earner": true,
+    "self_employed": false,
+    "income_band_monthly_naira": "500k_1m",
+    "monthly_income_estimate_naira": 520000,
+    "dependants_count": 1,
+    "marital_status": "married",
+    "rough_cash_balance_naira": 2040000,
+    "rough_savings_level": "moderate",
+    "emergency_savings_months": 5.5,
+    "average_monthly_outflow_naira": 400000,
+    "debt_service_monthly_naira": 0,
+    "risk_tolerance": "medium",
+    "financial_goals": [
+      "protect_family"
+    ],
+    "data_sharing_marketing_consent": "explicit",
+    "profile_completeness": "medium",
+    "holdings": [
+      {
+        "product_id": "prod_008",
+        "subsidiary_id": "sub_pensions",
+        "status": "active",
+        "opened_months_ago": 124,
+        "premium_naira": null,
+        "monthly_contribution_naira": 95000,
+        "balance_naira": 10540000
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  },
+  {
+    "customer_id": "cust_000039",
+    "age": 45,
+    "region": "Ondo",
+    "employment_type": "formal_private",
+    "salary_earner": true,
+    "self_employed": false,
+    "income_band_monthly_naira": "500k_1m",
+    "monthly_income_estimate_naira": 900000,
+    "dependants_count": 2,
+    "marital_status": "married",
+    "rough_cash_balance_naira": 790000,
+    "rough_savings_level": "low",
+    "emergency_savings_months": 2.1,
+    "average_monthly_outflow_naira": 490000,
+    "debt_service_monthly_naira": 0,
+    "risk_tolerance": "medium",
+    "financial_goals": [
+      "protect_family",
+      "children_education",
+      "retirement_security",
+      "wealth_building"
+    ],
+    "data_sharing_marketing_consent": "unknown",
+    "profile_completeness": "high",
+    "holdings": [
+      {
+        "product_id": "prod_005",
+        "subsidiary_id": "sub_life",
+        "status": "active",
+        "opened_months_ago": 103,
+        "premium_naira": 50000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  },
+  {
+    "customer_id": "cust_000040",
+    "age": 26,
+    "region": "Kwara",
+    "employment_type": "formal_public",
+    "salary_earner": true,
+    "self_employed": false,
+    "income_band_monthly_naira": "250k_500k",
+    "monthly_income_estimate_naira": 300000,
+    "dependants_count": 0,
+    "marital_status": "single",
+    "rough_cash_balance_naira": 340000,
+    "rough_savings_level": "low",
+    "emergency_savings_months": 1.4,
+    "average_monthly_outflow_naira": 290000,
+    "debt_service_monthly_naira": 30000,
+    "risk_tolerance": "low",
+    "financial_goals": [
+      "retirement_security"
+    ],
+    "data_sharing_marketing_consent": "declined",
+    "profile_completeness": "medium",
+    "holdings": [
+      {
+        "product_id": "prod_001",
+        "subsidiary_id": "sub_general_insurance",
+        "status": "active",
+        "opened_months_ago": 77,
+        "premium_naira": 15000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  },
+  {
+    "customer_id": "cust_000041",
+    "age": 35,
+    "region": "Kaduna",
+    "employment_type": "self_employed_business",
+    "salary_earner": false,
+    "self_employed": true,
+    "income_band_monthly_naira": "500k_1m",
+    "monthly_income_estimate_naira": 960000,
+    "dependants_count": 1,
+    "marital_status": "married",
+    "rough_cash_balance_naira": 4760000,
+    "rough_savings_level": "high",
+    "emergency_savings_months": 7,
+    "average_monthly_outflow_naira": 650000,
+    "debt_service_monthly_naira": 0,
+    "risk_tolerance": "medium",
+    "financial_goals": [
+      "protect_family",
+      "children_education"
+    ],
+    "data_sharing_marketing_consent": "implicit",
+    "profile_completeness": "medium",
+    "holdings": [
+      {
+        "product_id": "prod_004",
+        "subsidiary_id": "sub_general_insurance",
+        "status": "active",
+        "opened_months_ago": 26,
+        "premium_naira": 90000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      },
+      {
+        "product_id": "prod_008",
+        "subsidiary_id": "sub_pensions",
+        "status": "active",
+        "opened_months_ago": 29,
+        "premium_naira": null,
+        "monthly_contribution_naira": 85000,
+        "balance_naira": 2930000
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  },
+  {
+    "customer_id": "cust_000042",
+    "age": 51,
+    "region": "Kano",
+    "employment_type": "formal_public",
+    "salary_earner": true,
+    "self_employed": false,
+    "income_band_monthly_naira": "100k_250k",
+    "monthly_income_estimate_naira": 160000,
+    "dependants_count": 0,
+    "marital_status": "divorced",
+    "rough_cash_balance_naira": 440000,
+    "rough_savings_level": "low",
+    "emergency_savings_months": 2.7,
+    "average_monthly_outflow_naira": 150000,
+    "debt_service_monthly_naira": 25000,
+    "risk_tolerance": "high",
+    "financial_goals": [
+      "retirement_security",
+      "own_home"
+    ],
+    "data_sharing_marketing_consent": "implicit",
+    "profile_completeness": "medium",
+    "holdings": [
+      {
+        "product_id": "prod_008",
+        "subsidiary_id": "sub_pensions",
+        "status": "active",
+        "opened_months_ago": 102,
+        "premium_naira": null,
+        "monthly_contribution_naira": 20000,
+        "balance_naira": 3750000
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  },
+  {
+    "customer_id": "cust_000043",
+    "age": 25,
+    "region": "Lagos",
+    "employment_type": "self_employed_business",
+    "salary_earner": false,
+    "self_employed": true,
+    "income_band_monthly_naira": "100k_250k",
+    "monthly_income_estimate_naira": 190000,
+    "dependants_count": 1,
+    "marital_status": "single",
+    "rough_cash_balance_naira": 240000,
+    "rough_savings_level": "low",
+    "emergency_savings_months": 1.9,
+    "average_monthly_outflow_naira": 130000,
+    "debt_service_monthly_naira": 30000,
+    "risk_tolerance": "high",
+    "financial_goals": [
+      "protect_family",
+      "business_protection"
+    ],
+    "data_sharing_marketing_consent": "declined",
+    "profile_completeness": "high",
+    "holdings": [
+      {
+        "product_id": "prod_001",
+        "subsidiary_id": "sub_general_insurance",
+        "status": "active",
+        "opened_months_ago": 29,
+        "premium_naira": 15000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      },
+      {
+        "product_id": "prod_008",
+        "subsidiary_id": "sub_pensions",
+        "status": "active",
+        "opened_months_ago": 1,
+        "premium_naira": null,
+        "monthly_contribution_naira": 25000,
+        "balance_naira": 1730000
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  },
+  {
+    "customer_id": "cust_000044",
+    "age": 52,
+    "region": "Kwara",
+    "employment_type": "self_employed_business",
+    "salary_earner": false,
+    "self_employed": true,
+    "income_band_monthly_naira": "500k_1m",
+    "monthly_income_estimate_naira": 890000,
+    "dependants_count": 0,
+    "marital_status": "single",
+    "rough_cash_balance_naira": 4400000,
+    "rough_savings_level": "moderate",
+    "emergency_savings_months": 5,
+    "average_monthly_outflow_naira": 730000,
+    "debt_service_monthly_naira": 0,
+    "risk_tolerance": "low",
+    "financial_goals": [
+      "retirement_security"
+    ],
+    "data_sharing_marketing_consent": "explicit",
+    "profile_completeness": "medium",
+    "holdings": [
+      {
+        "product_id": "prod_003",
+        "subsidiary_id": "sub_general_insurance",
+        "status": "active",
+        "opened_months_ago": 47,
+        "premium_naira": 38000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  },
+  {
+    "customer_id": "cust_000045",
+    "age": 28,
+    "region": "Rivers",
+    "employment_type": "formal_private",
+    "salary_earner": true,
+    "self_employed": false,
+    "income_band_monthly_naira": "250k_500k",
+    "monthly_income_estimate_naira": 360000,
+    "dependants_count": 0,
+    "marital_status": "single",
+    "rough_cash_balance_naira": 790000,
+    "rough_savings_level": "low",
+    "emergency_savings_months": 2.7,
+    "average_monthly_outflow_naira": 280000,
+    "debt_service_monthly_naira": 65000,
+    "risk_tolerance": "medium",
+    "financial_goals": [
+      "retirement_security"
+    ],
+    "data_sharing_marketing_consent": "declined",
+    "profile_completeness": "high",
+    "holdings": [
+      {
+        "product_id": "prod_005",
+        "subsidiary_id": "sub_life",
+        "status": "active",
+        "opened_months_ago": 1,
+        "premium_naira": 35000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      },
+      {
+        "product_id": "prod_008",
+        "subsidiary_id": "sub_pensions",
+        "status": "active",
+        "opened_months_ago": 42,
+        "premium_naira": null,
+        "monthly_contribution_naira": 45000,
+        "balance_naira": 4060000
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  },
+  {
+    "customer_id": "cust_000046",
+    "age": 44,
+    "region": "Delta",
+    "employment_type": "self_employed_business",
+    "salary_earner": false,
+    "self_employed": true,
+    "income_band_monthly_naira": "1m_2m",
+    "monthly_income_estimate_naira": 1590000,
+    "dependants_count": 2,
+    "marital_status": "married",
+    "rough_cash_balance_naira": 4740000,
+    "rough_savings_level": "moderate",
+    "emergency_savings_months": 4.8,
+    "average_monthly_outflow_naira": 1160000,
+    "debt_service_monthly_naira": 0,
+    "risk_tolerance": "medium",
+    "financial_goals": [
+      "protect_family",
+      "children_education"
+    ],
+    "data_sharing_marketing_consent": "implicit",
+    "profile_completeness": "medium",
+    "holdings": [
+      {
+        "product_id": "prod_002",
+        "subsidiary_id": "sub_general_insurance",
+        "status": "active",
+        "opened_months_ago": 9,
+        "premium_naira": 165000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      },
+      {
+        "product_id": "prod_005",
+        "subsidiary_id": "sub_life",
+        "status": "active",
+        "opened_months_ago": 118,
+        "premium_naira": 145000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  },
+  {
+    "customer_id": "cust_000047",
+    "age": 43,
+    "region": "Lagos",
+    "employment_type": "formal_private",
+    "salary_earner": true,
+    "self_employed": false,
+    "income_band_monthly_naira": "100k_250k",
+    "monthly_income_estimate_naira": 220000,
+    "dependants_count": 0,
+    "marital_status": "divorced",
+    "rough_cash_balance_naira": 1500000,
+    "rough_savings_level": "high",
+    "emergency_savings_months": 7.7,
+    "average_monthly_outflow_naira": 180000,
+    "debt_service_monthly_naira": 0,
+    "risk_tolerance": "medium",
+    "financial_goals": [
+      "retirement_security"
+    ],
+    "data_sharing_marketing_consent": "unknown",
+    "profile_completeness": "medium",
+    "holdings": [
+      {
+        "product_id": "prod_001",
+        "subsidiary_id": "sub_general_insurance",
+        "status": "active",
+        "opened_months_ago": 44,
+        "premium_naira": 15000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  },
+  {
+    "customer_id": "cust_000048",
+    "age": 35,
+    "region": "Plateau",
+    "employment_type": "professional_freelance",
+    "salary_earner": false,
+    "self_employed": true,
+    "income_band_monthly_naira": "500k_1m",
+    "monthly_income_estimate_naira": 590000,
+    "dependants_count": 1,
+    "marital_status": "single",
+    "rough_cash_balance_naira": 2300000,
+    "rough_savings_level": "moderate",
+    "emergency_savings_months": 3.8,
+    "average_monthly_outflow_naira": 520000,
+    "debt_service_monthly_naira": 0,
+    "risk_tolerance": "medium",
+    "financial_goals": [
+      "protect_family"
+    ],
+    "data_sharing_marketing_consent": "explicit",
+    "profile_completeness": "medium",
+    "holdings": [
+      {
+        "product_id": "prod_008",
+        "subsidiary_id": "sub_pensions",
+        "status": "active",
+        "opened_months_ago": 105,
+        "premium_naira": null,
+        "monthly_contribution_naira": 70000,
+        "balance_naira": 790000
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  },
+  {
+    "customer_id": "cust_000049",
+    "age": 57,
+    "region": "Kaduna",
+    "employment_type": "formal_public",
+    "salary_earner": true,
+    "self_employed": false,
+    "income_band_monthly_naira": "500k_1m",
+    "monthly_income_estimate_naira": 710000,
+    "dependants_count": 4,
+    "marital_status": "married",
+    "rough_cash_balance_naira": 2470000,
+    "rough_savings_level": "moderate",
+    "emergency_savings_months": 5.4,
+    "average_monthly_outflow_naira": 440000,
+    "debt_service_monthly_naira": 20000,
+    "risk_tolerance": "medium",
+    "financial_goals": [
+      "protect_family",
+      "retirement_security",
+      "wealth_building"
+    ],
+    "data_sharing_marketing_consent": "declined",
+    "profile_completeness": "medium",
+    "holdings": [
+      {
+        "product_id": "prod_007",
+        "subsidiary_id": "sub_life",
+        "status": "active",
+        "opened_months_ago": 145,
+        "premium_naira": null,
+        "monthly_contribution_naira": 70000,
+        "balance_naira": 580000
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  },
+  {
+    "customer_id": "cust_000050",
+    "age": 45,
+    "region": "Edo",
+    "employment_type": "professional_freelance",
+    "salary_earner": false,
+    "self_employed": true,
+    "income_band_monthly_naira": "500k_1m",
+    "monthly_income_estimate_naira": 570000,
+    "dependants_count": 2,
+    "marital_status": "married",
+    "rough_cash_balance_naira": 1090000,
+    "rough_savings_level": "low",
+    "emergency_savings_months": 2.3,
+    "average_monthly_outflow_naira": 430000,
+    "debt_service_monthly_naira": 0,
+    "risk_tolerance": "high",
+    "financial_goals": [
+      "protect_family"
+    ],
+    "data_sharing_marketing_consent": "explicit",
+    "profile_completeness": "high",
+    "holdings": [
+      {
+        "product_id": "prod_008",
+        "subsidiary_id": "sub_pensions",
+        "status": "active",
+        "opened_months_ago": 5,
+        "premium_naira": null,
+        "monthly_contribution_naira": 80000,
+        "balance_naira": 9660000
+      },
+      {
+        "product_id": "prod_001",
+        "subsidiary_id": "sub_general_insurance",
+        "status": "active",
+        "opened_months_ago": 128,
+        "premium_naira": 15000,
+        "monthly_contribution_naira": null,
+        "balance_naira": null
+      }
+    ],
+    "edge_case": null,
+    "edge_case_note": null
+  }
+]

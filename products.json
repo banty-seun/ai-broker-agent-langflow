@@ -1,0 +1,152 @@
+[
+  {
+    "product_id": "prod_001",
+    "subsidiary_id": "sub_general_insurance",
+    "name": "Motor Third-Party Insurance",
+    "category": "Motor insurance",
+    "short_description": "Statutory third-party cover for private vehicle owners, covering legal liability for third-party bodily injury and property damage.",
+    "eligibility": "Nigerian residents with a registered private car or light vehicle and valid vehicle particulars.",
+    "price_or_fee": {
+      "currency": "NGN",
+      "indicative_amount_ngn": 15000,
+      "billing_period": "annual",
+      "notes": "Indicative private motor third-party premium; actual premium may depend on vehicle class and regulatory tariff updates."
+    },
+    "tier": "entry"
+  },
+  {
+    "product_id": "prod_002",
+    "subsidiary_id": "sub_general_insurance",
+    "name": "Comprehensive Motor Insurance",
+    "category": "Motor insurance",
+    "short_description": "Higher-tier motor cover for own-damage, theft, fire, accidental damage, and third-party liability, with optional tracker or roadside assistance benefits.",
+    "eligibility": "Private or business vehicle owners who can provide vehicle details, proof of ownership, and current vehicle value.",
+    "price_or_fee": {
+      "currency": "NGN",
+      "indicative_amount_ngn": 125000,
+      "billing_period": "annual",
+      "notes": "Indicative minimum premium; pricing commonly scales around a percentage of vehicle value subject to underwriting."
+    },
+    "tier": "premium"
+  },
+  {
+    "product_id": "prod_003",
+    "subsidiary_id": "sub_general_insurance",
+    "name": "Home Protect Insurance",
+    "category": "Property insurance",
+    "short_description": "Cover for residential building and/or contents against fire, burglary, flood, impact damage, and selected household risks.",
+    "eligibility": "Homeowners, tenants, or landlords with an insurable interest in a residential property or household contents in Nigeria.",
+    "price_or_fee": {
+      "currency": "NGN",
+      "indicative_amount_ngn": 25000,
+      "billing_period": "annual",
+      "notes": "Starter premium for modest contents cover; building and high-value contents require sum-insured based pricing."
+    },
+    "tier": "standard"
+  },
+  {
+    "product_id": "prod_004",
+    "subsidiary_id": "sub_general_insurance",
+    "name": "Marine Cargo Insurance",
+    "category": "Marine insurance",
+    "short_description": "Transit cover for imported, exported, or locally transported goods against loss or damage while in transit.",
+    "eligibility": "Importers, exporters, distributors, SMEs, and businesses moving goods with invoices, waybills, bills of lading, or other transit documents.",
+    "price_or_fee": {
+      "currency": "NGN",
+      "indicative_amount_ngn": 20000,
+      "billing_period": "per shipment",
+      "notes": "Indicative minimum charge; premium may be around 0.35% to 1.00% of declared cargo value depending on route, goods, and cover type."
+    },
+    "tier": "business"
+  },
+  {
+    "product_id": "prod_005",
+    "subsidiary_id": "sub_life",
+    "name": "Term Life Protection Plan",
+    "category": "Life insurance",
+    "short_description": "Pure protection life cover that pays a benefit to nominated beneficiaries if the insured dies during the policy term.",
+    "eligibility": "Adults with dependants or loan obligations, subject to age limits, health declarations, insurable interest, and underwriting.",
+    "price_or_fee": {
+      "currency": "NGN",
+      "indicative_amount_ngn": 30000,
+      "billing_period": "annual",
+      "notes": "Indicative premium for low to moderate cover; actual pricing depends on age, sum assured, term, health, occupation, and underwriting."
+    },
+    "tier": "entry"
+  },
+  {
+    "product_id": "prod_006",
+    "subsidiary_id": "sub_life",
+    "name": "Education Endowment Plan",
+    "category": "Savings-linked life assurance",
+    "short_description": "A planned savings and life assurance product designed to help parents or guardians fund future school fees while adding protection if the policyholder dies.",
+    "eligibility": "Parents, guardians, or sponsors with regular income who can commit to periodic contributions for a chosen education funding target.",
+    "price_or_fee": {
+      "currency": "NGN",
+      "indicative_amount_ngn": 25000,
+      "billing_period": "monthly",
+      "notes": "Indicative minimum contribution; benefit illustration depends on contribution amount, policy term, charges, and declared bonuses if applicable."
+    },
+    "tier": "standard"
+  },
+  {
+    "product_id": "prod_007",
+    "subsidiary_id": "sub_life",
+    "name": "Capital Builder Plan",
+    "category": "Investment-linked life assurance",
+    "short_description": "A flexible savings-linked life assurance plan for customers building medium-term capital with periodic contributions and life protection features.",
+    "eligibility": "Adults with verifiable income and a medium-term savings objective who can tolerate policy charges, surrender rules, and non-guaranteed returns.",
+    "price_or_fee": {
+      "currency": "NGN",
+      "indicative_amount_ngn": 20000,
+      "billing_period": "monthly",
+      "notes": "Indicative contribution; actual terms depend on selected premium, duration, charges, policy value, and surrender conditions."
+    },
+    "tier": "standard"
+  },
+  {
+    "product_id": "prod_008",
+    "subsidiary_id": "sub_pensions",
+    "name": "Retirement Savings Account",
+    "category": "Pension administration",
+    "short_description": "A contributory pension account for formal-sector workers and eligible individuals to accumulate retirement savings under Nigeria's pension framework.",
+    "eligibility": "Employees and eligible contributors with National Identity Number and required KYC documentation, subject to PenCom rules.",
+    "price_or_fee": {
+      "currency": "NGN",
+      "indicative_amount_ngn": 0,
+      "billing_period": "account opening",
+      "notes": "No upfront account-opening fee; statutory contributions are typically employer and employee funded, with regulated charges applied to pension fund administration."
+    },
+    "tier": "core"
+  },
+  {
+    "product_id": "prod_009",
+    "subsidiary_id": "sub_pensions",
+    "name": "Voluntary Pension Contributions",
+    "category": "Pension add-on",
+    "short_description": "Additional pension contributions that can be added to an existing RSA to increase long-term retirement savings.",
+    "eligibility": "Existing RSA holders with capacity to make additional voluntary contributions and willingness to observe PenCom withdrawal, tax, and access rules.",
+    "price_or_fee": {
+      "currency": "NGN",
+      "indicative_amount_ngn": 5000,
+      "billing_period": "monthly minimum voluntary contribution",
+      "notes": "Indicative flexible amount; access to voluntary contributions may be subject to holding periods, tax treatment, and PenCom rules."
+    },
+    "tier": "add_on"
+  },
+  {
+    "product_id": "prod_010",
+    "subsidiary_id": "sub_trustees",
+    "name": "Will and Estate Planning Service",
+    "category": "Trusteeship and estate services",
+    "short_description": "Professional estate planning support for documenting wills, appointing executors or trustees, and planning transfer of assets to beneficiaries.",
+    "eligibility": "Adults with assets, dependants, business interests, insurance benefits, pension entitlements, or estate-distribution wishes requiring documented planning.",
+    "price_or_fee": {
+      "currency": "NGN",
+      "indicative_amount_ngn": 150000,
+      "billing_period": "one-off setup",
+      "notes": "Indicative professional service fee; complex estates, trust structures, probate support, and ongoing administration may attract additional fees."
+    },
+    "tier": "advisory"
+  }
+]
